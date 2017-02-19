@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="FRPC Source Files">
+      <UniqueIdentifier>{fd81ff51-2c32-4b91-b0ab-97f95b39e0ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FRPC Header Files">
+      <UniqueIdentifier>{94595490-7ea8-4e5f-9521-322dbd245b25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="frpcdll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\WinsockError.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpc.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcarray.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcbinary.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcbinmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcbinunmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcbool.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcdatabuilder.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcdatetime.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcdouble.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcencodingerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcfault.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpchttp.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpchttpclient.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpchttperror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpchttpio.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcindexerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcint.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpckeyerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpclenerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcmethodregistry.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcpool.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcprotocolerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcresponseerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcserver.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcserverproxy.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcstreamerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcstring.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcstruct.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpctreebuilder.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpctreefeeder.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpctypeerror.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcunmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcvalue.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcwriter.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcxmlmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\frpcxmlunmarshaller.cc">
+      <Filter>FRPC Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frpcdll.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\frpcdll.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="frpcdll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpc.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcarray.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcbinary.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcbinmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcbinunmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcbool.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcdatabuilder.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcdatetime.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcdefaultmethod.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcdouble.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcencodingerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcfault.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpchttp.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpchttpclient.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpchttperror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpchttpio.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcindexerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcint.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcinternals.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpckeyerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpclenerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcmethod.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcmethodregistry.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcplatform.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcpool.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcprotocolerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcresponseerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcserver.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcserverproxy.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcsocket.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcsocketunix.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcsocketwin.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcstreamerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcstring.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcstruct.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpctreebuilder.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpctreefeeder.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpctypeerror.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcunmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcvalue.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcwriter.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcxmlmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\frpcxmlunmarshaller.h">
+      <Filter>FRPC Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="frpcdll.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

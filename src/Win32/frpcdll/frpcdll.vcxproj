@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98C405FF-3345-4B3D-B442-0DBA56C8A2B9}</ProjectGuid>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\libdll\Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\libdll\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\..\..\;.\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\..\libxml\libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)frpcdll.dll</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\frpcdll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)frpcdll.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0405</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\..\..\;.\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>.\..\libxml\libxml2.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)frpcdll.dll</OutputFile>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ModuleDefinitionFile>.\frpcdll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)frpcdll.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0405</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\frpc.cc" />
+    <ClCompile Include="..\..\frpcarray.cc" />
+    <ClCompile Include="..\..\frpcbinary.cc" />
+    <ClCompile Include="..\..\frpcbinmarshaller.cc" />
+    <ClCompile Include="..\..\frpcbinunmarshaller.cc" />
+    <ClCompile Include="..\..\frpcbool.cc" />
+    <ClCompile Include="..\..\frpcdatabuilder.cc" />
+    <ClCompile Include="..\..\frpcdatetime.cc" />
+    <ClCompile Include="..\..\frpcdouble.cc" />
+    <ClCompile Include="..\..\frpcencodingerror.cc" />
+    <ClCompile Include="..\..\frpcerror.cc" />
+    <ClCompile Include="..\..\frpcfault.cc" />
+    <ClCompile Include="..\..\frpchttp.cc" />
+    <ClCompile Include="..\..\frpchttpclient.cc" />
+    <ClCompile Include="..\..\frpchttperror.cc" />
+    <ClCompile Include="..\..\frpchttpio.cc" />
+    <ClCompile Include="..\..\frpcindexerror.cc" />
+    <ClCompile Include="..\..\frpcint.cc" />
+    <ClCompile Include="..\..\frpckeyerror.cc" />
+    <ClCompile Include="..\..\frpclenerror.cc" />
+    <ClCompile Include="..\..\frpcmarshaller.cc" />
+    <ClCompile Include="..\..\frpcmethodregistry.cc" />
+    <ClCompile Include="..\..\frpcpool.cc" />
+    <ClCompile Include="..\..\frpcprotocolerror.cc" />
+    <ClCompile Include="..\..\frpcresponseerror.cc" />
+    <ClCompile Include="..\..\frpcserver.cc" />
+    <ClCompile Include="..\..\frpcserverproxy.cc" />
+    <ClCompile Include="..\..\frpcstreamerror.cc" />
+    <ClCompile Include="..\..\frpcstring.cc" />
+    <ClCompile Include="..\..\frpcstruct.cc" />
+    <ClCompile Include="..\..\frpctreebuilder.cc" />
+    <ClCompile Include="..\..\frpctreefeeder.cc" />
+    <ClCompile Include="..\..\frpctypeerror.cc" />
+    <ClCompile Include="..\..\frpcunmarshaller.cc" />
+    <ClCompile Include="..\..\frpcvalue.cc" />
+    <ClCompile Include="..\..\frpcwriter.cc" />
+    <ClCompile Include="..\..\frpcxmlmarshaller.cc" />
+    <ClCompile Include="..\..\frpcxmlunmarshaller.cc" />
+    <ClCompile Include="..\WinsockError.cpp" />
+    <ClCompile Include="frpcdll.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="frpcdll.def" />
+    <None Include="res\frpcdll.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\frpc.h" />
+    <ClInclude Include="..\..\frpcarray.h" />
+    <ClInclude Include="..\..\frpcbinary.h" />
+    <ClInclude Include="..\..\frpcbinmarshaller.h" />
+    <ClInclude Include="..\..\frpcbinunmarshaller.h" />
+    <ClInclude Include="..\..\frpcbool.h" />
+    <ClInclude Include="..\..\frpcdatabuilder.h" />
+    <ClInclude Include="..\..\frpcdatetime.h" />
+    <ClInclude Include="..\..\frpcdefaultmethod.h" />
+    <ClInclude Include="..\..\frpcdouble.h" />
+    <ClInclude Include="..\..\frpcencodingerror.h" />
+    <ClInclude Include="..\..\frpcerror.h" />
+    <ClInclude Include="..\..\frpcfault.h" />
+    <ClInclude Include="..\..\frpchttp.h" />
+    <ClInclude Include="..\..\frpchttpclient.h" />
+    <ClInclude Include="..\..\frpchttperror.h" />
+    <ClInclude Include="..\..\frpchttpio.h" />
+    <ClInclude Include="..\..\frpcindexerror.h" />
+    <ClInclude Include="..\..\frpcint.h" />
+    <ClInclude Include="..\..\frpcinternals.h" />
+    <ClInclude Include="..\..\frpckeyerror.h" />
+    <ClInclude Include="..\..\frpclenerror.h" />
+    <ClInclude Include="..\..\frpcmarshaller.h" />
+    <ClInclude Include="..\..\frpcmethod.h" />
+    <ClInclude Include="..\..\frpcmethodregistry.h" />
+    <ClInclude Include="..\..\frpcplatform.h" />
+    <ClInclude Include="..\..\frpcpool.h" />
+    <ClInclude Include="..\..\frpcprotocolerror.h" />
+    <ClInclude Include="..\..\frpcresponseerror.h" />
+    <ClInclude Include="..\..\frpcserver.h" />
+    <ClInclude Include="..\..\frpcserverproxy.h" />
+    <ClInclude Include="..\..\frpcsocket.h" />
+    <ClInclude Include="..\..\frpcsocketunix.h" />
+    <ClInclude Include="..\..\frpcsocketwin.h" />
+    <ClInclude Include="..\..\frpcstreamerror.h" />
+    <ClInclude Include="..\..\frpcstring.h" />
+    <ClInclude Include="..\..\frpcstruct.h" />
+    <ClInclude Include="..\..\frpctreebuilder.h" />
+    <ClInclude Include="..\..\frpctreefeeder.h" />
+    <ClInclude Include="..\..\frpctypeerror.h" />
+    <ClInclude Include="..\..\frpcunmarshaller.h" />
+    <ClInclude Include="..\..\frpcvalue.h" />
+    <ClInclude Include="..\..\frpcwriter.h" />
+    <ClInclude Include="..\..\frpcxmlmarshaller.h" />
+    <ClInclude Include="..\..\frpcxmlunmarshaller.h" />
+    <ClInclude Include="frpcdll.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="frpcdll.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
