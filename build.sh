@@ -11,3 +11,28 @@ if [ -n "$MIS_DEPS" ]; then
 	apt-get install $MIS_DEPS
 fi
 
+echo "Running libtoolize"
+libtoolize
+
+echo "Running aclocal"
+aclocal
+
+echo "Running automake --add-missing"
+automake --add-missing
+
+#echo "Running autoconf"
+#autoconf
+
+echo "Running autoreconf"
+autoreconf -if
+
+echo "Running ./configure"
+./configure
+
+echo "Running make"
+make
+
+echo "================================================================================"
+echo "Run make install"
+# make install
+
