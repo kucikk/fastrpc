@@ -1,2 +1,8 @@
-1) install Build-Depends from debian/control
-2) 
+1) Install Build-Depends from debian/control
+2) Run libtoolize
+3) Run aclocal
+4) Run automake --add-missing
+5) Run autoreconf -fi
+6) Run ./configure
+7) Run make
+8) Optionaly run make install
