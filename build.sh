@@ -20,9 +20,6 @@ aclocal
 echo "Running automake --add-missing"
 automake --add-missing
 
-#echo "Running autoconf"
-#autoconf
-
 echo "Running autoreconf"
 autoreconf -if
 
@@ -34,5 +31,4 @@ make
 
 echo "================================================================================"
 echo "Run make install"
-# make install
 
